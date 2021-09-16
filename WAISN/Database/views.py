@@ -43,6 +43,12 @@ def index(request):
                'update_error_flag': UPDATE_ERROR_FLAG,
                'delete_error_flag': DELETE_ERROR_FLAG,
                }
+    
+    #Attempt to fix unwarranted alert() bug
+    CREATE_ERROR_FLAG = False
+    UPDATE_ERROR_FLAG = False
+    DELETE_ERROR_FLAG = False
+
     # Render the view
     return render(request, 'Database/index.html', context)
 
@@ -119,6 +125,7 @@ def delete(request):
         product.delete()
 
         #No error so false is returned
+        print('no error')
         return False
 
     except ObjectDoesNotExist as e:

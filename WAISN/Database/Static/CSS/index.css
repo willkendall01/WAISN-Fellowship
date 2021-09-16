@@ -1,5 +1,6 @@
+
+/* text, header and footer foramtting */
 body {
-  /* padding: 0px 100px; */
   margin: 0px;
   background-color: #fefae0;
   font-family: "Roboto", sans-serif;
@@ -18,7 +19,6 @@ a:hover {
 
 .title {
   background-color: #ddb892;
-  /* width: 100vw; */
   width: 100%;
   margin: 0px;
   padding: 30px 0px 30px 60px;
@@ -31,7 +31,10 @@ a:hover {
   margin: 0px;
   padding: 20px 0px 20px 20px;
 }
+/* ************************************** */
 
+
+/* Form formatting */
 input {
   padding: 5px;
   margin: 0px 10px;
@@ -45,6 +48,25 @@ input {
   margin: 0px 10px;
   background-color: #d4a373;
 }
+
+.num {
+  width: 40px;
+}
+
+
+.instructions {
+  margin: 5px 0px;
+}
+
+.custom-form {
+  margin-top: 15px;
+  font-weight: 700;
+  width: 100%;
+}
+/* ************************************** */
+
+
+/* Page Layout */
 .row {
   display: flex;
   overflow: hidden;
@@ -73,7 +95,7 @@ input {
 .thin-column {
   flex: 10%;
   background-color: #fefae0;
-  padding-top: 20px;
+
 }
 
 .column {
@@ -82,10 +104,10 @@ input {
   height: 100vh;
   padding: 20px 50px;
 }
+/* ************************************** */
 
-.num {
-  width: 40px;
-}
+
+/* page layout altered for smaller width */
 @media screen and (max-width: 1182px) {
   .row {
     display: flex;
@@ -125,17 +147,10 @@ input {
     z-index: -1;
   }
 }
+/* ************************************** */
 
-.instructions {
-  margin: 5px 0px;
-}
 
-.custom-form {
-  margin-top: 15px;
-  font-weight: 700;
-  width: 100%;
-}
-
+/* table formatting */
 table {
   border-collapse: inherit;
   font-size: large;
@@ -167,3 +182,4 @@ td {
 .odd {
   background-color: #faedcd;
 }
+/* ************************************** */

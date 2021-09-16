@@ -8,13 +8,12 @@ order of most to least code added by me.
 # Set up
 
 ### In a terminal window
-1. Clone this project into the directory you wish to ue
-2. Start a virtual environment
-3. Install required packages with `pip install -r requirements.txt`
-4. CD into WAISN-Fellowship/WAISN and run `python manage.py migrate` you should see a list of all the applied migrations in your terminal output
-5. Remaining in WAISN-Fellowship/WAISN, run `python manage.py runserver` to start the server
-   - This might throw an error asking you to add the i.p. to the `ALLOWED_HOSTS` list in settings.py 
-   - (I haven't had the opportunity to test this on a different computer, so I'm not sure)
+1. Clone this project into the directory you wish to ue.
+2. Start a virtual environment.
+3. Install required packages with `pip install -r requirements.txt`.
+4. `cd` into WAISN-Fellowship/WAISN and run `python manage.py migrate` you should see a list of all the applied migrations in your terminal output.
+5. Remaining in WAISN-Fellowship/WAISN, run `python manage.py runserver` to start the server.
+   - This might throw an error asking you to add the i.p. to the `ALLOWED_HOSTS` list in settings.py (I haven't had the opportunity to test this on a different computer, so I'm not sure).
    - Fix this error by copying the i.p. into the 'ALLOWED_HOSTS' list on line 38 of WAISN-Fellowship/WAISN/WAISN/settings.py  
 
 # Files 
@@ -49,18 +48,15 @@ After running a clean install of a git clone on my copmuter, it seems my admin a
 This link explaines the process very clearly: https://docs.djangoproject.com/en/1.8/intro/tutorial02/
 
 # Library Notes
-I used django-tables2 to help me format the table of products on the site. I'm not sure
-if it will install automatically when you try to run the code, so, in case it doesn't work, here is the link to 
-the install page:
+I used django-tables2 and gunicorn to help me build the site. They should install during step 3 of the setup process, but here are the links in case they do not.
 
 https://django-tables2.readthedocs.io/en/latest/pages/installation.html
+https://docs.gunicorn.org/en/stable/install.html
 
-(It worked outside of my virtual env when I ran with a clean git clone in a new location on my computer. However, it did not prompt me to install the package, so it may be global on my computer.)
 
 # Known Bugs
 - After clicking table headers to re-order products, if the table is altered, the order will revert to defualt.
 - The width and height of the site are actually larger than the view size of the browser.
-- Alerts will sometimes pop-up upon page refresh (clearing cache in browser fixes this).
 - Responsiveness is far from perfect, but the site still looks good on a 1920x1080 monitor (full or half width). 
 
 # Resorces

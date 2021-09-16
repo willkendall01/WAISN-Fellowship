@@ -40,6 +40,6 @@ Stuff I used to help me out!
 - https://django-tables2.readthedocs.io/en/latest/
 - https://css-tricks.com/
 - https://stackoverflow.com/questions/5516437/django-form-has-no-errors-but-form-is-valid-doesnt-validate (among other S.O. posts)
--https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab
--https://djangowaves.com/tips-tricks/gitignore-for-a-django-project/
--And other links I dont have open anymore!
+- https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab
+- https://djangowaves.com/tips-tricks/gitignore-for-a-django-project/
+- And other links I dont have open anymore!

@@ -31,6 +31,11 @@ views.py (line 148).
 In order to recieve the alert emails when a product reaches a quantity of 0, you'll have to add your email to the `recipient_list` in the `outOfStockAlert()` function which is the last function at the bottom of 
 views.py (line 149).
 
+# Admin Config
+After running a clean install of a git clone on my copmuter, it seems my admin account was erased. I made a minor change to the admin page to better display the product data to the admin. It's fairly minor, but if you wish to examine it, you may have to make a superuser for the db.
+
+This link explaines the process very clearly: https://docs.djangoproject.com/en/1.8/intro/tutorial02/
+
 # Library Notes
 I used django-tables2 to help me format the table of products on the site. I'm not sure
 if it will install automatically when you try to run the code, so, in case it doesn't work, here is the link to 

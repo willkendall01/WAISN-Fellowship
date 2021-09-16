@@ -6,7 +6,7 @@ already had a few lines of code. Below the files are listed in (approximate)
 order of most to least code added by me.
 
 # Files 
-(Assume they are prefixed by WAISN/Database/ unless prefixed otherwise):
+(Assume they are prefixed by WAISN/Database/ unless prefixed WAISN/WAISN/):
    1. views.py
    2. Static/CSS/index.CSS
    3. Templates/Database/index.html

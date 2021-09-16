@@ -1,1 +1,1 @@
-web: python WAISN/manage.py runserver
+worker: python WAISN/manage.py runserver

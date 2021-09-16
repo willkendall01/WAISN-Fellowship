@@ -5,6 +5,18 @@ I used the `django-admin startproject` to start this project, so some files
 already had a few lines of code. Below the files are listed in (approximate)
 order of most to least code added by me.
 
+# Set up
+
+### In a terminal window
+1. Clone this project into the directory you wish to ue
+2. Start a virtual environment
+3. Install required packages with `pip install -r requirements.txt`
+4. CD into WAISN-Fellowship/WAISN and run `python manage.py migrate` you should see a list of all the applied migrations in your terminal output
+5. Remaining in WAISN-Fellowship/WAISN, run `python manage.py runserver` to start the server
+   - This might throw an error asking you to add the i.p. to the `ALLOWED_HOSTS` list in settings.py 
+   - (I haven't had the opportunity to test this on a different computer, so I'm not sure)
+   - Fix this error by copying the i.p. into the 'ALLOWED_HOSTS' list on line 38 of WAISN-Fellowship/WAISN/WAISN/settings.py  
+
 # Files 
 (Assume they are prefixed by WAISN/Database/ unless prefixed WAISN/WAISN/):
    1. views.py

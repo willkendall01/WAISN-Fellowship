@@ -12,7 +12,8 @@ order of most to least code added by me.
 2. Start a virtual environment.
 3. Install required packages with `pip install -r requirements.txt`.
 4. `cd` into WAISN-Fellowship/WAISN and run `python manage.py migrate` you should see a list of all the applied migrations in your terminal output.
-5. Remaining in WAISN-Fellowship/WAISN, run `python manage.py runserver` to start the server.
+5. Reference Email Config below for information on how to set up email system.
+6. Remaining in WAISN-Fellowship/WAISN, run `python manage.py runserver` to start the server.
    - This might throw an error asking you to add the i.p. to the `ALLOWED_HOSTS` list in settings.py (I haven't had the opportunity to test this on a different computer, so I'm not sure).
    - Fix this error by copying the i.p. into the 'ALLOWED_HOSTS' list on line 38 of WAISN-Fellowship/WAISN/WAISN/settings.py  
 

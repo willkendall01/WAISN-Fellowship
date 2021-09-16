@@ -143,8 +143,8 @@ def delete(request):
 #   Recipient List: The list of emails to which the messsage will be sent (str)
 def outOfStockAlert(product_name):
     subject = 'Product Alert: ' + product_name
-    message = 'This is an automated message' + 'from your inventory system' + \
-        'to notify you that ' + product_name + ' is out of stock.'
+    message = 'This is an automated message' + ' from your inventory system' + \
+        ' to notify you that ' + product_name + ' is out of stock.'
     host_email = "wpk235@gmail.com"
     recipient_list = ["wpk235@gmail.com"]
 

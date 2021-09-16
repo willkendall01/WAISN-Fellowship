@@ -36,9 +36,10 @@ the install page:
 https://django-tables2.readthedocs.io/en/latest/pages/installation.html
 
 # Known Bugs
--After clicking table headers to re-order products, if the table is altered, the order will revert to defualt
--The width and height of the site are actually larger than the view size of the browser
--Alerts will sometimes pop-up upon page refresh (clearing cache in browser fixes this)
+- After clicking table headers to re-order products, if the table is altered, the order will revert to defualt
+- The width and height of the site are actually larger than the view size of the browser
+- Alerts will sometimes pop-up upon page refresh (clearing cache in browser fixes this)
+- Responsiveness is not close to perfect. 
 
 # Resorces
 Stuff I used to help me out!

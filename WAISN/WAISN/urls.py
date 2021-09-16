@@ -18,6 +18,6 @@ from django.urls import path, include
 
 #The path to the main page and the admin page are both included
 urlpatterns = [
-    path('WAISN/', include('Database.urls')),
+    path('', include('Database.urls')),
     path('admin/', admin.site.urls),
 ]

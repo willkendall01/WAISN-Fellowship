@@ -1,0 +1,169 @@
+body {
+  /* padding: 0px 100px; */
+  margin: 0px;
+  background-color: #fefae0;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  overflow: visible;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  background-color: #ddb892;
+  /* width: 100vw; */
+  width: 100%;
+  margin: 0px;
+  padding: 30px 0px 30px 60px;
+}
+
+.footer {
+  background-color: #ddb892;
+  height: 10px;
+  width: 100%;
+  margin: 0px;
+  padding: 20px 0px 20px 20px;
+}
+
+input {
+  padding: 5px;
+  margin: 0px 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.09);
+}
+
+.input-button {
+  padding: 5px 15px;
+  margin: 0px 10px;
+  background-color: #d4a373;
+}
+.row {
+  display: flex;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #faedcd;
+  padding-bottom: 30px;
+}
+
+.stripe {
+  background-color: #faedcd;
+  position: relative;
+  display: grid;
+}
+
+.stripe:before {
+  background-color: #faedcd;
+  position: absolute;
+  height: 100%;
+  width: 200vw;
+  left: -100vw;
+  z-index: -1;
+}
+
+.thin-column {
+  flex: 10%;
+  background-color: #fefae0;
+  padding-top: 20px;
+}
+
+.column {
+  flex: 50%;
+  background-color: #faedcd;
+  height: 100vh;
+  padding: 20px 50px;
+}
+
+.num {
+  width: 40px;
+}
+@media screen and (max-width: 1182px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    overflow: hidden;
+    width: 100vw;
+  }
+  .thin-column {
+    width: 100vw;
+    background-color: #fefae0;
+    padding-top: 20px;
+  }
+  .column {
+    flex: 100%;
+    background-color: #faedcd;
+    height: 100%;
+    padding: 20px 50px;
+  }
+  .container {
+    background-color: #faedcd;
+    padding-bottom: 30px;
+    flex: 100%;
+  }
+
+  .stripe {
+    background-color: #faedcd;
+    position: relative;
+    display: grid;
+  }
+
+  .stripe:before {
+    background-color: #faedcd;
+    position: absolute;
+    height: 100%;
+    width: 200vw;
+    left: -100vw;
+    z-index: -1;
+  }
+}
+
+.instructions {
+  margin: 5px 0px;
+}
+
+.custom-form {
+  margin-top: 15px;
+  font-weight: 700;
+  width: 100%;
+}
+
+table {
+  border-collapse: inherit;
+  font-size: large;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+thead {
+  background-color: #faedcd;
+  border: 1px solid #990000;
+}
+
+th {
+  padding: 7px 7px;
+}
+
+td {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.even {
+  background-color: #faedcd;
+  background-color: #fefae0;
+  border: 1px solid #990000 !important;
+}
+
+.odd {
+  background-color: #faedcd;
+}

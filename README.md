@@ -30,10 +30,12 @@ views.py. I can also do this if you want me to, but I am on vacation this weeken
 
 # Library Notes
 I used django-tables2 to help me format the table of products on the site. I'm not sure
-if it will install automatically when you try to run the code, but here is the link to 
+if it will install automatically when you try to run the code, so, in case it doesn't work, here is the link to 
 the install page:
 
 https://django-tables2.readthedocs.io/en/latest/pages/installation.html
+
+(It worked outside of my virtual env when I ran with a clean git clone in a new location on my computer. However, it did not prompt me to install the package, so it may be global on my computer.)
 
 # Known Bugs
 - After clicking table headers to re-order products, if the table is altered, the order will revert to defualt

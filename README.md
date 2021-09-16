@@ -19,12 +19,12 @@ order of most to least code added by me.
 I did not write code in any of the remaining files.
 
 # Email Config
-I left my email details in WAISN/settings.py so the site will work
-right out of the box. However, if you want to use your own instead, I left a link 
-to the tutorial I used to set it up (shouldnt take more than 5-10min).
+I left my email details in WAISN/WAISN/settings.py so the site will work
+right out of the box. However, if you want to use your own, I left a link 
+to the tutorial I used to set it up.
 
 In order to recieve the alert emails when a product reaches 0, you'll have to add your email to the recipients list in the `outOfStockAlert()` function at the bottom of 
-views.py. 
+views.py. I can also do this if you want me to, but I am on vacation this weekend and may not be able to change the code right away.
 
 # Library Notes
 I used django-tables2 to help me format the table of products on the site. I'm not sure

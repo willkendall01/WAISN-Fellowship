@@ -8,13 +8,15 @@ order of most to least code added by me.
 # Files 
 (Assume they are prefixed by WAISN/Database/ unless prefixed otherwise):
    1. views.py
-   2. forms.py
-   3. models.py
-   4. admin.py
-   5. tables.py
-   6. WAISN/WAISN/urls.py
-   7. urls.py
-   8. WAISN/WAISN/settings.py (Just the email config settings)
+   2. Static/CSS/index.CSS
+   3. Templates/Database/index.html
+   4. forms.py
+   5. models.py
+   6. admin.py
+   7. tables.py
+   8. WAISN/WAISN/urls.py
+   9. urls.py
+   10. WAISN/WAISN/settings.py (Just the email config settings)
 
 I did not write code in any of the remaining files.
 

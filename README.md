@@ -51,8 +51,8 @@ This link explaines the process very clearly: https://docs.djangoproject.com/en/
 # Library Notes
 I used django-tables2 and gunicorn to help me build the site. They should install during step 3 of the setup process, but here are the links in case they do not.
 
-https://django-tables2.readthedocs.io/en/latest/pages/installation.html
-https://docs.gunicorn.org/en/stable/install.html
+- https://django-tables2.readthedocs.io/en/latest/pages/installation.html
+- https://docs.gunicorn.org/en/stable/install.html
 
 
 # Known Bugs

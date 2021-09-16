@@ -23,10 +23,12 @@ I did not write code in any of the remaining files.
 # Email Config
 I left my email details as the email config data at the top of WAISN/WAISN/settings.py so the site will work
 right out of the box. However, if you want to use your own, I left a link 
-to the tutorial I used to set it up. You will also have to change the `host_email` parameter to `send_mail()` function in the `outOfStockAlert()` function which is the last function at the bottom of 
+to the tutorial I used to set it up. If you follow this tutorial, you will also have to change the `host_email` parameter to `send_mail()` function in the `outOfStockAlert()` function which is the last function at the bottom of 
 views.py (line 148).
+- https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab
 
-In order to recieve the alert emails when a product reaches 0, you'll have to add your email to the recipients list in the `outOfStockAlert()` function which is the last function at the bottom of 
+
+In order to recieve the alert emails when a product reaches a quantity of 0, you'll have to add your email to the `recipient_list` in the `outOfStockAlert()` function which is the last function at the bottom of 
 views.py (line 149).
 
 # Library Notes

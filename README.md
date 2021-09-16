@@ -44,7 +44,7 @@ https://django-tables2.readthedocs.io/en/latest/pages/installation.html
 - After clicking table headers to re-order products, if the table is altered, the order will revert to defualt.
 - The width and height of the site are actually larger than the view size of the browser.
 - Alerts will sometimes pop-up upon page refresh (clearing cache in browser fixes this).
-- Responsiveness is not close to perfect. 
+- Responsiveness is far from perfect, but the site still looks good on a 1920x1080 monitor (full or half width). 
 
 # Resorces
 Stuff I used to help me out!

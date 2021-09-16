@@ -1,7 +1,7 @@
 # WAISN-Fellowship
 Take home test for WAISN Fellowship
 
-I used the 'django-admin startproject' to start this project, so some files 
+I used the `django-admin startproject` to start this project, so some files 
 already had a few lines of code. Below the files are listed in (approximate)
 order of most to least code added by me.
 
@@ -32,4 +32,5 @@ Stuff I used to help me out!
 - https://css-tricks.com/
 - https://stackoverflow.com/questions/5516437/django-form-has-no-errors-but-form-is-valid-doesnt-validate (among other S.O. posts)
 -https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab
+-https://djangowaves.com/tips-tricks/gitignore-for-a-django-project/
 -And other links I dont have open anymore!

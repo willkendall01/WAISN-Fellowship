@@ -6,15 +6,15 @@ already had a few lines of code. Below the files are listed in (approximate)
 order of most to least code added by me.
 
 # Files 
-(Assume they are prefixed by Database/ unless prefixed otherwise):
+(Assume they are prefixed by WAISN/Database/ unless prefixed otherwise):
    1. views.py
    2. forms.py
    3. models.py
    4. admin.py
    5. tables.py
-   6. WAISN/urls.py
+   6. WAISN/WAISN/urls.py
    7. urls.py
-   8. WAISN/settings.py (Just the email config settings)
+   8. WAISN/WAISN/settings.py (Just the email config settings)
 
 I did not write code in any of the remaining files.
 

@@ -20,68 +20,64 @@
         {% if delete_error_flag %}
             <script>alert("Cannot delete product because it does not exist. Check spelling and capitalization before trying again.")</script>  
         {% endif %}
+        
+        
         <h1 class="title">WAISN Fellowship Inventory Management</h1>
         <div class="row">
-            <div class="thin-column">
-                <!-- <fieldset> -->
-                    
-                    {% if product_list %}
-                    <!-- <ul> -->
-                    {% render_table product_list %}
-                    <!-- {% for product in product_list %} 
-                        <li><div class="product-name">{{ product.product_name }} </div>
-                             <div>Current Quantity: {{ product.product_quantity }}</div>
-                               
-                    {% endfor %} -->
-                    <!-- </ul> -->
+            
+            <div class="thin-column">                  
+                {% if product_list %}
+                    {% render_table product_list %}  
                 {% else %}
                     <h2 style="padding:0px 20px 0px 20px; text-align: center;">No products are being monitored.</h2>
                 {% endif %}
-                    <!-- <input type="submit" value="Submit"> -->
-                <!-- </fieldset> -->
             </div>
+            
             <div class="container">
                 <div class="stripe">
-            <div class="column">
+                    <div class="column">
                 
-                <h2>Create new product</h2>
-                <div class="instructions">Fill the "Product Name" box with the name of the new product to be added. </div>
-                <div class="instructions">Fill the "Product Quantity" with the amount of that new product you are adding to the inventory.</div>
-                <form action="{% url 'index' %}" method="POST" placeholder="Apple">
-                    {% csrf_token %}
+                        <h2>Create new product</h2>
+                        <div class="instructions">Fill the "Product Name" box with the name of the new product to be added. </div>
+                        <div class="instructions">Fill the "Product Quantity" with the amount of that new product you are adding to the inventory.</div>
+                        <form action="{% url 'index' %}" method="POST" placeholder="Apple">
+                            {% csrf_token %}
 
-                    <div class="custom-form">
-                        {{create_product_form}}
-                        <input class="input-button" type="submit" name="create" value="Create">
-                    </div>
-                </form> 
-                <h2>Update Existing Product</h2>
-                <div class="instructions">Fill the "Product Name" box with the name of the existing product whose quantity you are trying to change. </div>
-                <div class="instructions">Fill the "Product Quantity" with the new amount of that product in the inventory.</div>
-                <form  action="{% url 'index' %}" method="POST" placeholder="Apple">
-                    {% csrf_token %}
+                            <div class="custom-form">
+                                {{create_product_form}}
+                                <input class="input-button" type="submit" name="create" value="Create">
+                            </div>
+                        </form> 
 
-                    <div class="custom-form">
-                        {{update_product_form}}
-                        <input class="input-button" type="submit" name="update" value="Update">
+                        <h2>Update Existing Product</h2>
+                        <div class="instructions">Fill the "Product Name" box with the name of the existing product whose quantity you are trying to change. </div>
+                        <div class="instructions">Fill the "Product Quantity" with the new amount of that product in the inventory.</div>
+                        <form  action="{% url 'index' %}" method="POST" placeholder="Apple">
+                            {% csrf_token %}
+
+                            <div class="custom-form">
+                                {{update_product_form}}
+                                <input class="input-button" type="submit" name="update" value="Update">
+                            </div>
+                        </form>   
+
+                        <h2>Delete Existing Product</h2>
+                        <div class="instructions">Fill the "Product Name" box with the name of the product you wish to delete. </div>
+                        <form  action="{% url 'index' %}" method="POST" placeholder="Apple">
+                            {% csrf_token %}
+
+                            <div class="custom-form">
+                                {{delete_product_form}}
+                                <input class="input-button" type="submit" name="delete" value="Delete">
+                            </div>
+                        </form>  
+                    
                     </div>
-                </form>   
-                <h2>Delete Existing Product</h2>
-                <div class="instructions">Fill the "Product Name" box with the name of the product you wish to delete. </div>
-                
-                <form  action="{% url 'index' %}" method="POST" placeholder="Apple">
-                    {% csrf_token %}
-    
-                    <div class="custom-form">
-                        {{delete_product_form}}
-                        <input class="input-button" type="submit" name="delete" value="Delete">
-                    </div>
-                </form> 
-                
+                 </div>
             </div>
         </div>
-        </div>
-        </div>
+        
         <div class="footer"></div>
+        
     </body>
 </html>

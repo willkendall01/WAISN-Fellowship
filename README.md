@@ -8,7 +8,7 @@ order of most to least code added by me.
 # Set up
 
 ### In a terminal window
-1. Clone this project into the directory you wish to ue.
+1. Clone this project into the directory you wish to use.
 2. Start a virtual environment.
 3. Install required packages with `pip install -r requirements.txt`.
 4. `cd` into WAISN-Fellowship/WAISN and run `python manage.py migrate` you should see a list of all the applied migrations in your terminal output.
